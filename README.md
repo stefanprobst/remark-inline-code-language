@@ -35,3 +35,7 @@ console.log(transformedAst.children[0].children);
 //     lang: 'js' },
 //   { type: 'text', value: '.' } ]
 ```
+
+## Tip
+
+Instead of using this as a plugin, it is also possible to just import the `withInlineCodeLanguage` function. This can e.g. be useful when transforming Markdown to HTML: to save one tree traversal, use `withInlineCodeLanguage` in a `remark-rehype` `handler` function.
